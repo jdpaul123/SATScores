@@ -8,17 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		52E4A3DF2B622D8600D7ED0E /* SATScoresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3DE2B622D8600D7ED0E /* SATScoresApp.swift */; };
-		52E4A3E12B622D8600D7ED0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3E02B622D8600D7ED0E /* ContentView.swift */; };
+		52E4A3E12B622D8600D7ED0E /* SchoolListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3E02B622D8600D7ED0E /* SchoolListScreen.swift */; };
 		52E4A3E32B622D8700D7ED0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E4A3E22B622D8700D7ED0E /* Assets.xcassets */; };
 		52E4A3E62B622D8700D7ED0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E4A3E52B622D8700D7ED0E /* Preview Assets.xcassets */; };
+		52E4A3F32B622DD000D7ED0E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */; };
+		52E4A3F42B622DD000D7ED0E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3EE2B622DD000D7ED0E /* DataService.swift */; };
+		52E4A3F52B622DD000D7ED0E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F02B622DD000D7ED0E /* NetworkService.swift */; };
+		52E4A3F62B622DD000D7ED0E /* NetworkException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F12B622DD000D7ED0E /* NetworkException.swift */; };
+		52E4A3F72B622DD000D7ED0E /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F22B622DD000D7ED0E /* SessionProtocol.swift */; };
+		52E4A3FB2B622DEE00D7ED0E /* View+Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F92B622DEE00D7ED0E /* View+Banner.swift */; };
+		52E4A3FC2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3FA2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift */; };
+		52E4A3FF2B622DF900D7ED0E /* BannerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3FE2B622DF900D7ED0E /* BannerModifier.swift */; };
+		52E4A4052B622E3C00D7ED0E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4022B622E3C00D7ED0E /* LoadingView.swift */; };
+		52E4A4062B622E3C00D7ED0E /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4032B622E3C00D7ED0E /* PullToRefreshView.swift */; };
+		52E4A4072B622E3C00D7ED0E /* LoadingStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4042B622E3C00D7ED0E /* LoadingStates.swift */; };
+		52E4A40C2B62354D00D7ED0E /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A40B2B62354D00D7ED0E /* Schools.swift */; };
+		52E4A40E2B6237B900D7ED0E /* SchoolSATData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A40D2B6237B900D7ED0E /* SchoolSATData.swift */; };
+		52E4A4112B62463600D7ED0E /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4102B62463600D7ED0E /* Injector.swift */; };
+		52E4A4132B62474800D7ED0E /* SchoolListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4122B62474800D7ED0E /* SchoolListScreenViewModel.swift */; };
+		52E4A4152B6247BD00D7ED0E /* SchoolListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4142B6247BD00D7ED0E /* SchoolListCell.swift */; };
+		52E4A4172B6247EA00D7ED0E /* SchoolListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4162B6247EA00D7ED0E /* SchoolListCellViewModel.swift */; };
+		52E4A41A2B62489C00D7ED0E /* SchoolDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A4192B62489C00D7ED0E /* SchoolDetailScreen.swift */; };
+		52E4A41C2B6248AF00D7ED0E /* SchoolDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A41B2B6248AF00D7ED0E /* SchoolDetailScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52E4A3DB2B622D8600D7ED0E /* SATScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E4A3DE2B622D8600D7ED0E /* SATScoresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoresApp.swift; sourceTree = "<group>"; };
-		52E4A3E02B622D8600D7ED0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52E4A3E02B622D8600D7ED0E /* SchoolListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListScreen.swift; sourceTree = "<group>"; };
 		52E4A3E22B622D8700D7ED0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E4A3E52B622D8700D7ED0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		52E4A3EE2B622DD000D7ED0E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		52E4A3F02B622DD000D7ED0E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		52E4A3F12B622DD000D7ED0E /* NetworkException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkException.swift; sourceTree = "<group>"; };
+		52E4A3F22B622DD000D7ED0E /* SessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		52E4A3F92B622DEE00D7ED0E /* View+Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Banner.swift"; sourceTree = "<group>"; };
+		52E4A3FA2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+SessionProtocol.swift"; sourceTree = "<group>"; };
+		52E4A3FE2B622DF900D7ED0E /* BannerModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerModifier.swift; sourceTree = "<group>"; };
+		52E4A4022B622E3C00D7ED0E /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		52E4A4032B622E3C00D7ED0E /* PullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshView.swift; sourceTree = "<group>"; };
+		52E4A4042B622E3C00D7ED0E /* LoadingStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingStates.swift; sourceTree = "<group>"; };
+		52E4A40B2B62354D00D7ED0E /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
+		52E4A40D2B6237B900D7ED0E /* SchoolSATData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSATData.swift; sourceTree = "<group>"; };
+		52E4A4102B62463600D7ED0E /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		52E4A4122B62474800D7ED0E /* SchoolListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListScreenViewModel.swift; sourceTree = "<group>"; };
+		52E4A4142B6247BD00D7ED0E /* SchoolListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListCell.swift; sourceTree = "<group>"; };
+		52E4A4162B6247EA00D7ED0E /* SchoolListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListCellViewModel.swift; sourceTree = "<group>"; };
+		52E4A4192B62489C00D7ED0E /* SchoolDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailScreen.swift; sourceTree = "<group>"; };
+		52E4A41B2B6248AF00D7ED0E /* SchoolDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				52E4A3DE2B622D8600D7ED0E /* SATScoresApp.swift */,
-				52E4A3E02B622D8600D7ED0E /* ContentView.swift */,
-				52E4A3E22B622D8700D7ED0E /* Assets.xcassets */,
-				52E4A3E42B622D8700D7ED0E /* Preview Content */,
+				52E4A4102B62463600D7ED0E /* Injector.swift */,
+				52E4A3EC2B622DD000D7ED0E /* Services */,
+				52E4A4082B622E5800D7ED0E /* Models */,
+				52E4A4002B622E1200D7ED0E /* ViewsAndViewModels */,
+				52E4A3FD2B622DF900D7ED0E /* Modifiers */,
+				52E4A3F82B622DEE00D7ED0E /* Extensions */,
+				52E4A40A2B622E7300D7ED0E /* Assets */,
 			);
 			path = SATScores;
 			sourceTree = "<group>";
@@ -65,6 +107,117 @@
 				52E4A3E52B622D8700D7ED0E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52E4A3EC2B622DD000D7ED0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */,
+				52E4A3EE2B622DD000D7ED0E /* DataService.swift */,
+				52E4A3EF2B622DD000D7ED0E /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52E4A3EF2B622DD000D7ED0E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3F02B622DD000D7ED0E /* NetworkService.swift */,
+				52E4A3F12B622DD000D7ED0E /* NetworkException.swift */,
+				52E4A3F22B622DD000D7ED0E /* SessionProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		52E4A3F82B622DEE00D7ED0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3F92B622DEE00D7ED0E /* View+Banner.swift */,
+				52E4A3FA2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52E4A3FD2B622DF900D7ED0E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3FE2B622DF900D7ED0E /* BannerModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		52E4A4002B622E1200D7ED0E /* ViewsAndViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A41F2B6248F100D7ED0E /* Screens */,
+				52E4A4182B62481E00D7ED0E /* SchoolListCell */,
+				52E4A4012B622E2A00D7ED0E /* LoadingStates */,
+			);
+			path = ViewsAndViewModels;
+			sourceTree = "<group>";
+		};
+		52E4A4012B622E2A00D7ED0E /* LoadingStates */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A4042B622E3C00D7ED0E /* LoadingStates.swift */,
+				52E4A4022B622E3C00D7ED0E /* LoadingView.swift */,
+				52E4A4032B622E3C00D7ED0E /* PullToRefreshView.swift */,
+			);
+			path = LoadingStates;
+			sourceTree = "<group>";
+		};
+		52E4A4082B622E5800D7ED0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A40B2B62354D00D7ED0E /* Schools.swift */,
+				52E4A40D2B6237B900D7ED0E /* SchoolSATData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52E4A40A2B622E7300D7ED0E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3E22B622D8700D7ED0E /* Assets.xcassets */,
+				52E4A3E42B622D8700D7ED0E /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		52E4A4182B62481E00D7ED0E /* SchoolListCell */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A4142B6247BD00D7ED0E /* SchoolListCell.swift */,
+				52E4A4162B6247EA00D7ED0E /* SchoolListCellViewModel.swift */,
+			);
+			path = SchoolListCell;
+			sourceTree = "<group>";
+		};
+		52E4A41D2B6248D500D7ED0E /* SchoolListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A3E02B622D8600D7ED0E /* SchoolListScreen.swift */,
+				52E4A4122B62474800D7ED0E /* SchoolListScreenViewModel.swift */,
+			);
+			path = SchoolListScreen;
+			sourceTree = "<group>";
+		};
+		52E4A41E2B6248E400D7ED0E /* SchoolDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A4192B62489C00D7ED0E /* SchoolDetailScreen.swift */,
+				52E4A41B2B6248AF00D7ED0E /* SchoolDetailScreenViewModel.swift */,
+			);
+			path = SchoolDetailScreen;
+			sourceTree = "<group>";
+		};
+		52E4A41F2B6248F100D7ED0E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				52E4A41D2B6248D500D7ED0E /* SchoolListScreen */,
+				52E4A41E2B6248E400D7ED0E /* SchoolDetailScreen */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +290,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E4A3E12B622D8600D7ED0E /* ContentView.swift in Sources */,
+				52E4A3FB2B622DEE00D7ED0E /* View+Banner.swift in Sources */,
+				52E4A40C2B62354D00D7ED0E /* Schools.swift in Sources */,
+				52E4A3F62B622DD000D7ED0E /* NetworkException.swift in Sources */,
+				52E4A40E2B6237B900D7ED0E /* SchoolSATData.swift in Sources */,
+				52E4A4172B6247EA00D7ED0E /* SchoolListCellViewModel.swift in Sources */,
+				52E4A3F52B622DD000D7ED0E /* NetworkService.swift in Sources */,
+				52E4A4052B622E3C00D7ED0E /* LoadingView.swift in Sources */,
+				52E4A3F32B622DD000D7ED0E /* ImageCache.swift in Sources */,
+				52E4A4112B62463600D7ED0E /* Injector.swift in Sources */,
+				52E4A3FC2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift in Sources */,
+				52E4A3E12B622D8600D7ED0E /* SchoolListScreen.swift in Sources */,
+				52E4A3F72B622DD000D7ED0E /* SessionProtocol.swift in Sources */,
+				52E4A41C2B6248AF00D7ED0E /* SchoolDetailScreenViewModel.swift in Sources */,
+				52E4A4132B62474800D7ED0E /* SchoolListScreenViewModel.swift in Sources */,
+				52E4A4062B622E3C00D7ED0E /* PullToRefreshView.swift in Sources */,
+				52E4A41A2B62489C00D7ED0E /* SchoolDetailScreen.swift in Sources */,
 				52E4A3DF2B622D8600D7ED0E /* SATScoresApp.swift in Sources */,
+				52E4A3FF2B622DF900D7ED0E /* BannerModifier.swift in Sources */,
+				52E4A4152B6247BD00D7ED0E /* SchoolListCell.swift in Sources */,
+				52E4A4072B622E3C00D7ED0E /* LoadingStates.swift in Sources */,
+				52E4A3F42B622DD000D7ED0E /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SATScores/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SATScores/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SATScores/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SATScores/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 5MHQLWW6Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
