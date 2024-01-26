@@ -11,7 +11,6 @@
 		52E4A3E12B622D8600D7ED0E /* SchoolListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3E02B622D8600D7ED0E /* SchoolListScreen.swift */; };
 		52E4A3E32B622D8700D7ED0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E4A3E22B622D8700D7ED0E /* Assets.xcassets */; };
 		52E4A3E62B622D8700D7ED0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E4A3E52B622D8700D7ED0E /* Preview Assets.xcassets */; };
-		52E4A3F32B622DD000D7ED0E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */; };
 		52E4A3F42B622DD000D7ED0E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3EE2B622DD000D7ED0E /* DataService.swift */; };
 		52E4A3F52B622DD000D7ED0E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F02B622DD000D7ED0E /* NetworkService.swift */; };
 		52E4A3F62B622DD000D7ED0E /* NetworkException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4A3F12B622DD000D7ED0E /* NetworkException.swift */; };
@@ -38,7 +37,6 @@
 		52E4A3E02B622D8600D7ED0E /* SchoolListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListScreen.swift; sourceTree = "<group>"; };
 		52E4A3E22B622D8700D7ED0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E4A3E52B622D8700D7ED0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		52E4A3EE2B622DD000D7ED0E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		52E4A3F02B622DD000D7ED0E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		52E4A3F12B622DD000D7ED0E /* NetworkException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkException.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 		52E4A3EC2B622DD000D7ED0E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				52E4A3ED2B622DD000D7ED0E /* ImageCache.swift */,
 				52E4A3EE2B622DD000D7ED0E /* DataService.swift */,
 				52E4A3EF2B622DD000D7ED0E /* Network */,
 			);
@@ -297,7 +294,6 @@
 				52E4A4172B6247EA00D7ED0E /* SchoolListCellViewModel.swift in Sources */,
 				52E4A3F52B622DD000D7ED0E /* NetworkService.swift in Sources */,
 				52E4A4052B622E3C00D7ED0E /* LoadingView.swift in Sources */,
-				52E4A3F32B622DD000D7ED0E /* ImageCache.swift in Sources */,
 				52E4A4112B62463600D7ED0E /* Injector.swift in Sources */,
 				52E4A3FC2B622DEE00D7ED0E /* URLSession+SessionProtocol.swift in Sources */,
 				52E4A3E12B622D8600D7ED0E /* SchoolListScreen.swift in Sources */,

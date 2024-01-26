@@ -1,8 +1,8 @@
 //
 //  NetworkException.swift
-//  Desserts
+//  SATScores
 //
-//  Created by Jonathan Paul on 1/10/24.
+//  Created by Jonathan Paul on 1/24/24.
 //
 
 import Foundation

@@ -14,6 +14,21 @@ struct SchoolListScreen: View {
         self.viewModel = viewModel
     }
 
+    var paginationView: some View {
+        ZStack(alignment: .center) {
+            switch viewModel.paginationState {
+            case .loading:
+                ProgressView()
+            case .idle:
+                EmptyView()
+            }
+        }
+        .frame(height: 50)
+        .task {
+            try? await viewModel.fetchMoreSchools()
+        }
+    }
+
     var body: some View {
         switch viewModel.status {
         case .loading:
@@ -35,6 +50,7 @@ struct SchoolListScreen: View {
                     }
                     .listRowSeparator(.hidden)
                 }
+                paginationView
             }
             .navigationTitle("Schools")
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
