@@ -31,7 +31,7 @@ JD Paul
 3. Press Cmd+R to run the project in a iPhone or iPad simulator or physical device.
 
 ## Software and Language Versions
-* Xcode: 15.1
+* Xcode: 15.2
 * Swift: 5.9
 * iOS target version: 17.2
 
@@ -50,9 +50,11 @@ https://data.cityofnewyork.us/resource/f9bf-2cp4.json
 * There is a network and data service to seperate concerns between parts of the app. It decouples the view from the network and data logic making the app more maintainable and testable.
 * The service classes conform to protocols in order to allow for the creation of mock versions when unit testing.
 * The views utilize composable SwiftUI views to modularize the parts that are used to build each screen. This allows views such as the Loading View to be used on both the School List Screen and the School Detail Screen.
+* The Data Service is not completely necessary as I do not manipulate the data that I get from the REST API, but if I needed to clean up the data in any way that is where I would do it. The View Models only access the Data Service rather than directly accessing the Network Service. This also allows for better unit testing where the Network Service can be mocked and return local data rather than actually interacting with the back end.
 
 ### Testing
-* To view testing functions I have created please review the Network tests in my Fetch Desserts repository at https://github.com/jdpaul123/Desserts/blob/main/DessertsTests/NetworkServiceTests/NetworkServiceTests.swift
+* To view testing functions I have created please review the Network tests in my Fetch Desserts repository at https://github.com/jdpaul123/Desserts/blob/main/DessertsTests/NetworkServiceTests/NetworkServiceTests.swift . The project is very similar to this one.
+* Had I had more time for this project I would have implimented tests for the SAT Scores app too
 
 ### Future considerations for testing
 * Tests can be expanded to the other services and view models.
