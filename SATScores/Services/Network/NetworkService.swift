@@ -10,7 +10,6 @@ import Foundation
 protocol NetworkService: AnyObject {
     func getSchools() async throws -> [School]
     func getSchoolSATData(for id: String) async throws -> SchoolSATData
-    func getImageData(from url: URL) async throws -> Data
     func resetOffset()
 }
 

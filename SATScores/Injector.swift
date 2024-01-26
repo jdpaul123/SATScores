@@ -13,7 +13,7 @@ final class Injector {
     private let networkService: NetworkService
     let dataService: DataService
 
-    init(networkService: NetworkService = DefaultNetworkService(), dataService: DataService? = nil, imageCache: ImageCache? = nil) {
+    init(networkService: NetworkService = DefaultNetworkService(), dataService: DataService? = nil) {
         self.networkService = networkService
 
         if let dataService {
