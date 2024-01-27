@@ -36,7 +36,7 @@ JD Paul
 * iOS target version: 17.2
 
 ## Features meeting requirements
-* The app gets data from the two endpoints outlined in the project specification to get the list of schools and then the details about the school's average SAT scores:
+* The app gets data from the two endpoints outlined in the project specification to get the list of schools and their SAT score data and then, when a user clicks on a school and views their detial screen the user sees their average SAT scores and another API call occurs to get and display more information about the school:
 https://data.cityofnewyork.us/resource/s3k6-pzi2.json
 https://data.cityofnewyork.us/resource/f9bf-2cp4.json
 * The list of schools are displayed in the SchoolLListScreen.
