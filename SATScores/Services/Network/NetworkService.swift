@@ -8,8 +8,8 @@
 import Foundation
 
 protocol NetworkService: AnyObject {
-    func getSchools() async throws -> [School]
-    func getSchoolSATData(for id: String) async throws -> SchoolSATData
+    func getSchoolsSATData() async throws -> [SchoolSATData]
+    func getSchoolData(for id: String) async throws -> School
     func resetOffset()
 }
 
@@ -24,10 +24,10 @@ final class DefaultNetworkService: NetworkService {
         self.session = session
     }
 
-    func getSchools() async throws -> [School] {
-        let endpoint = "\(baseURLString)s3k6-pzi2.json?$limit=\(searchLimit)&$offset=\(offset)"
+    func getSchoolsSATData() async throws -> [SchoolSATData] {
+        let endpoint = "\(baseURLString)f9bf-2cp4.json?$limit=\(searchLimit)&$offset=\(offset)"
 
-        let response: [School] = try await fetchAndDecode(from: endpoint)
+        let response: [SchoolSATData] = try await fetchAndDecode(from: endpoint)
 
         offset += searchLimit
         return response
@@ -37,15 +37,15 @@ final class DefaultNetworkService: NetworkService {
         offset = 0
     }
 
-    func getSchoolSATData(for id: String) async throws -> SchoolSATData {
-        let endpoint = "\(baseURLString)f9bf-2cp4.json?dbn=\(id)"
+    func getSchoolData(for id: String) async throws -> School {
+        let endpoint = "\(baseURLString)s3k6-pzi2.json?dbn=\(id)"
 
-        let response: [SchoolSATData] = try await fetchAndDecode(from: endpoint)
-        guard let schoolSATData = response.first else {
+        let response: [School] = try await fetchAndDecode(from: endpoint)
+        guard let school = response.first else {
             throw NetworkException.badIndex
         }
 
-        return schoolSATData
+        return school
     }
 
     /// Generic function to decode JSON data

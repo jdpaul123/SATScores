@@ -15,10 +15,10 @@ class SchoolListScreenViewModel {
     var paginationState: PaginationState = .idle
 
     var status: LoadingStates = .loading
-    var schools: [School]
+    var schools: [SchoolSATData]
 
     var searchText = ""
-    var searchResults: [School] {
+    var searchResults: [SchoolSATData] {
         if searchText.isEmpty {
             return schools
         } else {
@@ -29,14 +29,14 @@ class SchoolListScreenViewModel {
     var bannerData = BannerModifier.BannerData()
     var showBanner = false
 
-    init(schools: [School] = []) {
+    init(schools: [SchoolSATData] = []) {
         self.schools = schools
     }
 
-    func fetchSchools() async throws {
+    func fetchSchoolsSATData() async throws {
         status = .loading
         do {
-            schools = try await Injector.shared.dataService.getSchools()
+            schools = try await Injector.shared.dataService.getSchoolsSATData()
             status = .success
         } catch {
             guard let error = error as? NetworkException else { return }
@@ -47,10 +47,10 @@ class SchoolListScreenViewModel {
         }
     }
 
-    func fetchMoreSchools() async throws {
+    func fetchMoreSchoolsSATData() async throws {
         paginationState = .loading
         do {
-            let moreSchools = try await Injector.shared.dataService.getSchools()
+            let moreSchools = try await Injector.shared.dataService.getSchoolsSATData()
             schools.append(contentsOf: moreSchools)
             paginationState = .idle
         } catch {

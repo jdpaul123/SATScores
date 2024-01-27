@@ -18,37 +18,35 @@ struct SchoolDetailScreen: View {
     let horizontalPadding: CGFloat = 5
 
     var body: some View {
-        switch viewModel.status {
-        case .loading:
-            LoadingView()
-            .task {
-                try? await viewModel.getSchoolSATData()
-            }
-        case .failed:
-            PullToRefreshView()
-                .refreshable {
-                    try? await viewModel.getSchoolSATData()
-                }
-                .banner(data: $viewModel.bannerData, show: $viewModel.showBanner)
-        case .success:
-            List {
-                Section {
-                    ForEach(viewModel.SATDataPairs) { satData in
-                        HStack {
-                            Text(satData.label)
-                            Spacer()
-                            Text(satData.value)
-                        }
+        List {
+            Section {
+                ForEach(viewModel.SATDataPairs) { satData in
+                    HStack {
+                        Text(satData.label)
+                        Spacer()
+                        Text(satData.value)
                     }
-                    .padding(.init(top: verticalPadding, leading: horizontalPadding, bottom: verticalPadding, trailing: horizontalPadding))
-                    .listRowSeparator(.hidden)
+                }
+                .padding(.init(top: verticalPadding, leading: horizontalPadding, bottom: verticalPadding, trailing: horizontalPadding))
+                .listRowSeparator(.hidden)
+            } header: {
+                Text("SAT Score Information")
+                    .font(.headline)
+            }
+            if viewModel.hasOverview {
+                Section {
+                    Text(viewModel.overviewText)
+                        .padding(.init(top: verticalPadding, leading: horizontalPadding, bottom: verticalPadding, trailing: horizontalPadding))
                 } header: {
-                    Text("SAT Score Information")
+                    Text("School Overview")
                         .font(.headline)
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(viewModel.name)
         }
+        .task {
+            try? await viewModel.getSchoolData()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(viewModel.name)
     }
 }

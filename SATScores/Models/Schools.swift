@@ -11,7 +11,8 @@ struct School: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id = "dbn"
         case name = "school_name"
+        case overview = "overview_paragraph"
     }
 
-    let id, name: String
+    let id, name, overview: String
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct SchoolSATData: Codable {
+struct SchoolSATData: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id = "dbn"
         case name = "school_name"

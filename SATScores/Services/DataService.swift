@@ -8,24 +8,24 @@
 import SwiftUI
 
 protocol DataService {
-    func getSchools() async throws -> [School]
-    func getSchoolSATData(for id: String) async throws -> SchoolSATData
+    func getSchoolsSATData() async throws -> [SchoolSATData]
+    func getSchoolData(for id: String) async throws -> School
     func resetOffset()
 }
 
 final class DefaultDataService: DataService {
+    func getSchoolsSATData() async throws -> [SchoolSATData] {
+        try await networkService.getSchoolsSATData()
+    }
+    
+    func getSchoolData(for id: String) async throws -> School {
+        try await networkService.getSchoolData(for: id)
+    }
+    
     private let networkService: NetworkService
 
     init(networkService: NetworkService) {
         self.networkService = networkService
-    }
-
-    func getSchools() async throws -> [School] {
-        try await networkService.getSchools()
-    }
-
-    func getSchoolSATData(for id: String) async throws -> SchoolSATData {
-        try await networkService.getSchoolSATData(for: id)
     }
 
     func resetOffset() {
